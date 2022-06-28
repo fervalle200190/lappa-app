@@ -1,0 +1,29 @@
+.welcome-page {
+     padding-left: 100px;
+     padding-right: 100px;
+     padding-top: 30px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.main-title {
+     font-size: 2.7rem;
+     color: #f3b840;
+     font-weight: 900;
+     text-align: center;
+}
+
+.ul-container {
+    padding-left: 20px;
+    margin-top: 25px;
+    li {
+        margin: 25px 0;
+    }
+}
+
+.info-container {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #54575a;
+}

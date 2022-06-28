@@ -1,0 +1,32 @@
+.navbar-container {
+    min-height: 100vh;
+    min-width: 400px;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    gap: 45px;
+    svg image, svg {
+        width: 350px;
+    }
+}
+
+.items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.navbar-item {
+    width: 280px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background: #EB5B27;
+    padding: 9px 0;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}

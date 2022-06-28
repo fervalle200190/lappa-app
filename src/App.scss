@@ -1,0 +1,17 @@
+body {
+     margin: 0;
+     font-family: 'Montserrat', sans-serif;
+}
+
+*, ::before, ::after {
+     box-sizing: border-box;
+     font-family: 'Montserrat', sans-serif;
+}
+
+button {
+     cursor: pointer;
+}
+
+.main-container {
+     display: flex;
+}
