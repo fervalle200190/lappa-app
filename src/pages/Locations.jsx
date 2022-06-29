@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { LocationsItem } from "../components/LocationsItem";
 import { MapView } from "../components/MapView";
 import "../styles/Locations.scss";
+import {ReactComponent as BackIcon} from '../assets/nav-op.svg'
 
 const address = [
      "9 de julio 875, Rosario, Santa Fe.",
@@ -26,6 +27,7 @@ export const Locations = () => {
                     </Link>
                </div>
                <MapView />
+               <BackIcon className="back-icon" />
           </div>
      );
 };

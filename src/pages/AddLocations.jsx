@@ -1,5 +1,7 @@
 import { Select } from "../components/Select";
 import '../styles/AddLocations.scss'
+import {ReactComponent as BackIcon} from '../assets/nav-op.svg'
+
 
 export const AddLocations = () => {
      return (
@@ -42,6 +44,7 @@ export const AddLocations = () => {
                          <input type="text" name="location" id="location" />
                     </label>
                </form>
+               <BackIcon className="back-icon" />
           </div>
      );
 };

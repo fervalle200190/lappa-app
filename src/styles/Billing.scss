@@ -5,7 +5,10 @@
      padding-bottom: 50px;
      display: flex;
      flex-direction: column;
+     width: 100%;
      color: #949496;
+     position: relative;
+     overflow: hidden;
 }
 
 .billing-title {

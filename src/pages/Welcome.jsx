@@ -1,4 +1,5 @@
 import '../styles/Welcome.scss'
+import {ReactComponent as BackIcon} from '../assets/nav-op.svg'
 
 export const Welcome = () => {
   return (
@@ -14,6 +15,7 @@ export const Welcome = () => {
                 <li>Descargar los comprobantes fiscales antiguos.</li>
             </ul>
         </div>
+        <BackIcon className='back-icon' />
     </div>
   )
 }

@@ -1,6 +1,8 @@
 import { Select } from "../components/Select";
 import { ReactComponent as Arrow } from "../assets/arrow-down-outline.svg";
 import "../styles/GeneralData.scss";
+import {ReactComponent as BackIcon} from '../assets/nav-op.svg'
+
 
 export const GeneralData = () => {
      return (
@@ -53,6 +55,7 @@ export const GeneralData = () => {
                          <input type="submit" value="guardar" className="save-btn" />
                     </div>
                </form>
+               <BackIcon className="back-icon" />
           </div>
      );
 };

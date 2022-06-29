@@ -15,3 +15,11 @@ button {
 .main-container {
      display: flex;
 }
+
+.back-icon {
+     position: absolute;
+     right: -220px;
+     top: 150px;
+     width: 400px;
+     opacity: 0.2;
+ }

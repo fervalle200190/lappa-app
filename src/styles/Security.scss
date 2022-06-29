@@ -3,6 +3,8 @@
      flex-direction: column;
      gap: 17px;
      padding-top: 10px;
+     position: relative;
+     overflow: hidden;
      label {
           display: flex;
           flex-direction: column;
@@ -21,7 +23,7 @@
      }
 }
 
-.form-container-security:last-child {
+.snd-form {
     padding-top: 50px;
 }
 
@@ -33,6 +35,8 @@
      display: flex;
      width: 100%;
      flex-direction: column;
+     position: relative;
+     overflow: hidden;
      color: #949496;
 }
 

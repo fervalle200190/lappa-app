@@ -3,6 +3,7 @@ import { ReactComponent as IconOne } from "../assets/1.svg";
 import { ReactComponent as IconTwo } from "../assets/2.svg";
 import { ReactComponent as IconThree } from "../assets/3.svg";
 import { ReactComponent as IconFour } from "../assets/4.svg";
+import {ReactComponent as BackIcon} from '../assets/nav-op.svg'
 import { PlusBox } from "../components/PlusBox";
 
 const boxInfo = [
@@ -40,6 +41,7 @@ export const LappaPlus = () => {
                <div className="plus-btn-container">
                     <button>Suscribirse</button>
                </div>
+               <BackIcon className="back-icon" />
           </div>
      );
 };

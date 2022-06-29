@@ -1,4 +1,6 @@
 import '../styles/Security.scss'
+import {ReactComponent as BackIcon} from '../assets/nav-op.svg'
+
 
 export const Security = () => {
      return (
@@ -21,7 +23,7 @@ export const Security = () => {
                          <button>Guardar cambios</button>
                     </div>
                </form>
-               <form className="form-container-security">
+               <form className="form-container-security snd-form">
                     <label>
                          Clave actual
                          <input type="text" name="location" id="location" />
@@ -38,6 +40,7 @@ export const Security = () => {
                          <button>Guardar cambios</button>
                     </div>
                </form>
+               <BackIcon className='back-icon' />
           </div>
      );
 };
