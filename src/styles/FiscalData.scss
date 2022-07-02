@@ -75,3 +75,12 @@
     border: none;
     font-weight: bold;
 }
+
+@media screen and (max-width: 1100px) {
+    .form-container-fiscal {
+        width: 80%;
+        input:not(.save-btn) {
+            max-width: none !important;
+        }
+    }
+}

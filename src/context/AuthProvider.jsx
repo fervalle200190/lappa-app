@@ -1,26 +1,32 @@
-import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { getToken } from "../helper";
 import { AuthContext } from "./AuthContext";
 
 export const AuthProvider = ({ children }) => {
-     const askAuth = async () => {
-         axios(`https://odoo.rgbconsulting.com/es/filtros-avanzados-odoo-2/login`, {
-               headers: { "Content-Type": "application/json" },
-               method: "POST",
-               params: {
-                    user: "prueba",
-                    pass: "prueba",
-                    dev: "Lappa",
-               },
-          }).then((res)=> {
-            console.log(res)
-          }).catch((err)=> {
-            console.log(err)
-          })
+     const [isOpen, setIsOpen] = useState("show-nav");
+     const handleClick = () => {
+          if (isOpen === "") {
+               setIsOpen("show-nav");
+          } else {
+               setIsOpen("");
+          }
      };
-     useEffect(() => {
-        askAuth()
-     }, []);
 
-     return <AuthContext.Provider value={"hola"}>{children}</AuthContext.Provider>;
+     const data = {
+          params: {
+               user: "prueba",
+               pass: "prueba",
+          },
+     };
+
+     const handlers = {
+          handleClick,
+          isOpen,
+     };
+
+
+     useEffect(() => {
+          console.log(getToken(data))
+     }, []);
+     return <AuthContext.Provider value={handlers}>{children}</AuthContext.Provider>;
 };

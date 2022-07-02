@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer } from "react-leaflet";
+import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import '../styles/MapStyles.scss'
 
 export const MapView = () => {
@@ -9,6 +9,8 @@ export const MapView = () => {
                          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
+                    <Marker position={[5.231,5.2231]}/>
+                    <Marker position={[5.281,5.2231]}/>
                </MapContainer>
           </div>
      );

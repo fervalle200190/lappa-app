@@ -1,5 +1,6 @@
 import '../styles/Welcome.scss'
 import {ReactComponent as BackIcon} from '../assets/nav-op.svg'
+import { Navbar } from '../components/Navbar'
 
 export const Welcome = () => {
   return (

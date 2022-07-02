@@ -13,14 +13,18 @@ import {
      Login,
      Password,
 } from "./pages";
+import { Navbar } from "./components/Navbar";
+import { useEffect } from "react";
+import axios from "axios";
 
 function App() {
      return (
           <div className="main-container">
+               {/* <Navbar /> */}
                {/* <Password /> */}
-               <Login />
-               {/* <SideBar />
-               <Routes>
+               {/* <Login />  */}
+               {/* <SideBar /> */}
+               {/* <Routes>
                     <Route path="/" element={<Welcome />} />
                     <Route path="/datos-generales" element={<GeneralData />} />
                     <Route path="/datos-fiscales" element={<FiscalData />} />

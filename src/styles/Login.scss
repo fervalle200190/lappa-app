@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 700px;
 }
 
 .login-form {
@@ -19,11 +21,14 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    width: 100%;
+    max-width: 700px;
     label {
         display: flex;
         flex-direction: column;
         gap: 5px;
         font-weight: bold;
+        width: 100%;
     }
     a {
         text-align: center;
@@ -35,7 +40,7 @@
     input {
         height: 35px;
         font-family: inherit;
-        width: 600px;
+        width: 100%;
         border: 2px solid #cecece;
         border-radius: 5px;
         padding-left: 15px;
@@ -52,5 +57,11 @@
         font-weight: bold;
         border-radius: 4px;
         font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .login-form label {
+        width: 80%;
     }
 }

@@ -2,6 +2,7 @@ import { Select } from "../components/Select";
 import { ReactComponent as Arrow } from "../assets/arrow-down-outline.svg";
 import "../styles/GeneralData.scss";
 import {ReactComponent as BackIcon} from '../assets/nav-op.svg'
+import { Navbar } from "../components/Navbar";
 
 
 export const GeneralData = () => {
