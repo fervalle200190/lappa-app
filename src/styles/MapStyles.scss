@@ -6,3 +6,9 @@
 .map-location {
     padding-top: 40px;
 }
+
+@media screen and (max-width: 1300px) {
+    .leaflet-container {
+        width: 90%;
+    }
+}

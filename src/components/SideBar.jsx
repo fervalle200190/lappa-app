@@ -32,7 +32,7 @@ const sideBarOptions = [
      },
      {
           name: "salir",
-          url: "/salir",
+          url: "/",
      },
 ];
 

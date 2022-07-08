@@ -14,12 +14,12 @@ export const AddLocations = () => {
                     </label>
                     <label>
                          Domicilio
-                         <input type="text" name="location" id="location" />
+                         <input type="text" name="house" id="house" />
                     </label>
                     <label>
                          Celular
                          <div className="extra-container">
-                              <input type="text" name="location" id="location" />
+                              <input type="text" name="phone" id="phone" />
                               <span>Sin 0 ni 15</span>
                          </div>
                     </label>

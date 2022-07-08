@@ -16,11 +16,11 @@ export const FiscalData = () => {
                     </label>
                     <label>
                          Condición ante IVA
-                         <input type="text" name="telefono" id="phone" />
+                         <input type="text" name="iva" id="iva" />
                     </label>
                     <label>
                          Cuit
-                         <input type="text" name="website" id="website" />
+                         <input type="text" name="cuit" id="cuit" />
                     </label>
                     <label>
                          Domicilio

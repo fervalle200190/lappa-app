@@ -1,6 +1,16 @@
 .options-container {
     position: absolute;
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    z-index: 30;
     display: none;
+}
+
+.show-select {
+    display: block;
 }
 
 .select-container {
