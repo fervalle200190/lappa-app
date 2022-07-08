@@ -14,39 +14,11 @@ import {
      Password,
 } from "./pages";
 import { Navbar } from "./components/Navbar";
-import { useContext, useEffect } from "react";
-import { getToken } from "./helper";
+import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
 
 function App() {
      const { isLogged } = useContext(AuthContext);
-
-     const data = {
-          params: {
-               token: localStorage.getItem("token"),
-               dev: "Nombre Host - APP otro",
-               model: "trans.transportista",
-               accion: "read",
-               dominio: [["ejecutor", "=", 42]],
-          },
-     };
-
-     useEffect(() => {
-          setTimeout(()=> {
-               fetch(`https://validacion.hgtsa.com.ar/app/data`, {
-               method: "POST",
-               headers: {
-                    "Content-Type": "application/json",
-               },
-               body: JSON.stringify(data),
-          }).then((res) => {
-               return res.json();
-          }).then((res)=> {
-               console.log(res)
-          });
-          }, 1000)
-     }, []);
-
      return (
           <div className="main-container">
                {!isLogged ? (
