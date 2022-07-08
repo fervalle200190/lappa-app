@@ -52,16 +52,10 @@ export const AuthProvider = ({ children }) => {
           setIsLogged(false);
      };
 
-
-   
-
      useEffect(() => {
           if (localStorage.getItem("token") !== null) {
                validateLogged(localStorage.getItem("token"));
-          }
-
-         
-         
+          }            
      }, []);
 
      const stuff = {
